@@ -17,3 +17,13 @@ function testNoteListViewHasHTMLStringify() {
 }
 
 testNoteListViewHasHTMLStringify();
+
+function testHTMLStringifyWorksForNoNotes() {
+    var list = new NoteList
+    var view = new NoteListView(list)
+    var htmlString = "<ul></ul>"
+    console.log(view.htmlStringify())
+    assert.isTrue(view.htmlStringify() === htmlString)
+}
+
+testHTMLStringifyWorksForNoNotes();
