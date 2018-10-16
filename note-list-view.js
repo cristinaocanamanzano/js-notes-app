@@ -1,6 +1,6 @@
 (function(exports) {
     function NoteListView(input) {
-        this.list = input;
+      this.list = input;
     }
 
     NoteListView.prototype.htmlStringify = function () {
